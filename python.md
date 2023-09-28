@@ -33,7 +33,7 @@ The class methods
 
 p1 = Person("Olivier", 47)
 print(p1)
-```py
+```
 
 ## Inheritance
 
