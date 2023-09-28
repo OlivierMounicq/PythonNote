@@ -88,3 +88,23 @@ print(c.Method())
 d = D()
 print(d.Method())
 ```
+## 6/ Call another class from another class located in another file
+
+```py
+#File : Shape.py
+class Circle:
+    def __init__(self, radius) -> None:
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * (self.radius ** 2)    
+```
+
+```py
+#File : main.py
+
+from Shape import Circle
+
+circle_instance = Circle(5)
+print(circle_instance.area())
+```
