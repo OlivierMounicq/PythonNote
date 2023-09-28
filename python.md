@@ -22,7 +22,7 @@ print(p1.ToString())
 - ```py__str__(self)``` : ToString() method
 
 
-  ```py
+```py
   class Person:
     def __init__(self, name, age) -> None:
          self.Name = name
