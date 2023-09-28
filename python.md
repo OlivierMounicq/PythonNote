@@ -109,7 +109,7 @@ circle_instance = Circle(5)
 print(circle_instance.area())
 ```
 
-## 7/ Override
+## 7/ Override method of the base class
 
 ```py
 class ParentClass:
