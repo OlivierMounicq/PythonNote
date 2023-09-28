@@ -47,4 +47,18 @@ x = 2
 print(f'The square of {x} is {MyMath.Square(x)}')
 ```
 
+## 4/ The inheritance and the base class
 
+```py
+class Student(Person):
+    def __init__(self, name, age, grade):
+        Person.__init__(self, name, age)
+        self.Grade = grade
+
+    def __str__(self) -> str:
+        return f'{super(Student, self).__str__()}  : {self.Grade}'
+        
+
+s1 = Student("Olivier", 47, "5th")
+print(s1)
+```py
