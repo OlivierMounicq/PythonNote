@@ -1,6 +1,6 @@
 # Python Note
 
-## First class
+## 1/ First class
 
 ```py
 #Person class
@@ -17,7 +17,7 @@ p1 = Person("Olivier", 47)
 print(p1.ToString())
 ```
 
-The class methods
+## 2/ The class methods
 - ```py__init__(self)``` : the constructor
 - ```py__str__(self)``` : ToString() method
 
@@ -35,5 +35,17 @@ p1 = Person("Olivier", 47)
 print(p1)
 ```
 
-## Inheritance
+## 3/ The static class
+
+```py
+class MyMath:
+    def Square(x) -> int:
+        return x*x
+
+MyMath.Square = staticmethod(MyMath.Square)
+
+x = 2
+print(f'The square of {x} is {MyMath.Square(x)}')
+```
+
 
