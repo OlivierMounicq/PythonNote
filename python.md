@@ -108,3 +108,29 @@ from Shape import Circle
 circle_instance = Circle(5)
 print(circle_instance.area())
 ```
+
+## 7/ Override
+
+```py
+class ParentClass:
+    def __init__(self) -> None:
+        pass
+
+    def show(self) -> str:
+        print("Parent class !") 
+
+
+class ChildClass(ParentClass):
+    def __init__(self) -> None:
+        pass
+
+    def show(self) -> str:
+        print("Child class !!") 
+
+pc = ParentClass()
+print(pc.show())        
+
+cc = ChildClass()
+print(cc.show())
+```
+
