@@ -62,3 +62,29 @@ class Student(Person):
 s1 = Student("Olivier", 47, "5th")
 print(s1)
 ```
+
+## 5/ The multiple inheritance
+
+-> Method Resolution Order
+
+```py
+class A:
+    def Method(a) -> str:
+        return 'Class A -> Method'
+
+class B:
+    def Method(a) -> str:
+        return 'Class B -> Method'
+    
+class C(B,A):
+    pass
+
+class D(A,B):
+    pass
+
+c = C()
+print(c.Method())
+
+d = D()
+print(d.Method())
+```
